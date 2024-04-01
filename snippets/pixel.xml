@@ -6,6 +6,10 @@
           revision="fourteen"
           review="gerrit.pixelexperience.org" />
 
+  <remote name="sado"
+          fetch="https://github.com/pe-sado"
+          revision="fourteen" />
+
   <remote name="pixel-gitlab"
           fetch="https://gitlab.pixelexperience.org/android"
           revision="fourteen" />
@@ -32,16 +36,16 @@
   <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="pixel" />
 
   <!-- Framework repos -->
-  <project path="frameworks/av" name="frameworks_av" remote="pixel" />
-  <project path="frameworks/base" name="frameworks_base" remote="pixel" />
-  <project path="frameworks/native" name="frameworks_native" remote="pixel" />
+  <project path="frameworks/av" name="frameworks_av" remote="sado" />
+  <project path="frameworks/base" name="frameworks_base" remote="sado" />
+  <project path="frameworks/native" name="frameworks_native" remote="sado" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="pixel" />
   <project path="frameworks/opt/timezonepicker" name="frameworks_opt_timezonepicker" remote="pixel" />
 
   <!-- General repos -->
   <project path="art" name="art" remote="pixel" />
   <project path="bionic" name="bionic" remote="pixel" />
-  <project path="build/make" name="build" remote="pixel">
+  <project path="build/make" name="build" remote="sado">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -87,7 +91,7 @@
   <!-- Packages repos -->
   <project path="packages/apps/Camera2" name="packages_apps_Camera2" remote="pixel" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="pixel" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="pixel" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="sado" />
   <project path="packages/modules/adb" name="packages_modules_adb" remote="pixel" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="pixel" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="pixel" />
