@@ -21,5 +21,6 @@
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="sado" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="pixel" />
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="pixel" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="sado" />
 
 </manifest>
